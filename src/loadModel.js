@@ -8,7 +8,7 @@ export function loadModel(scene) {
 
   return new Promise((resolve, reject) => {
     loader.load(
-      './sample-model.stl',
+      import.meta.env.BASE_URL + 'sample-model.stl',
       (geometry) => {
         geometry.computeBoundingBox();
         const box = geometry.boundingBox;
