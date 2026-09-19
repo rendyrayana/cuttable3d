@@ -4,7 +4,7 @@
 
 ![Banner](docs/banner.png)
 
-**[Live Preview](#)** · **[Project Page](#)** · [Rendy Rayana](#)
+**[Live Preview](https://rendyrayana.my.id/cuttable3d)** · **[Project Page](#)** · [Rendy Rayana](https://rendyrayana.my.id)
 
 ## Overview
 
@@ -67,6 +67,6 @@ Open `http://localhost:5173`. A sample model loads automatically.
 
 ## Links
 
-- **Live Preview:** [link](#)
+- **Live Preview:** [rendyrayana.my.id/cuttable3d](https://rendyrayana.my.id/cuttable3d)
 - **Project write-up:** [link](#)
-- **More projects:** [yourwebsite.com](#)
+- **More projects:** [rendyrayana.my.id](https://rendyrayana.my.id)
