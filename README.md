@@ -4,8 +4,6 @@
 
 Built for 3D printing prep: cut a model into printable pieces, check that they'll fit together, then export.
 
----
-
 ## Features
 
 ### Cutting
@@ -30,8 +28,6 @@ Built for 3D printing prep: cut a model into printable pieces, check that they'l
 - Double-click a piece to isolate it; use the transform gizmo to reposition
 - Exit isolation to return all pieces to the scene
 
----
-
 ## Tech Stack
 
 | Library | Role |
@@ -41,8 +37,6 @@ Built for 3D printing prep: cut a model into printable pieces, check that they'l
 | [three-bvh-csg](https://github.com/gkjohnson/three-bvh-csg) | Boolean mesh operations for cuts |
 | [manifold-3d](https://github.com/elalish/manifold) | Robust manifold geometry for cap faces |
 | [Vite](https://vitejs.dev) | Dev server & build tooling |
-
----
 
 ## Getting Started
 
@@ -60,8 +54,6 @@ npm run build
 # output → dist/
 ```
 
----
-
 ## Usage
 
 1. The sample model loads automatically on launch.
@@ -70,8 +62,6 @@ npm run build
 4. **Add a joint peg** — while in *Pointer* mode, click the **Joint** tool, then click a cut face to place a peg.
 5. **Puzzle** — click the puzzle-piece button to enter reassembly mode. Drag pieces onto their ghost outlines to snap them back.
 6. **Undo** — Ctrl+Z to reverse any cut.
-
----
 
 ## Project Structure
 
@@ -85,8 +75,6 @@ src/
 public/
   sample-model.stl
 ```
-
----
 
 ## License
 
