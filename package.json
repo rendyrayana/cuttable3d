@@ -1,0 +1,22 @@
+{
+  "name": "cuttable3d",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.20.0",
+    "manifold-3d": "^3.5.3",
+    "three": "^0.179.0",
+    "three-bvh-csg": "^0.0.18"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "vite-plugin-top-level-await": "^1.6.0",
+    "vite-plugin-wasm": "^3.6.0"
+  }
+}
