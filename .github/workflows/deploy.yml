@@ -19,7 +19,24 @@ jobs:
 
       - run: npm run build
 
-      - uses: peaceiris/actions-gh-pages@v4
+      - name: Checkout pages repo
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          repository: rendyrayana/reinpxl-cv
+          token: ${{ secrets.PAGES_TOKEN }}
+          path: pages-repo
+
+      - name: Copy build to subfolder
+        run: |
+          rm -rf pages-repo/cuttable3d
+          mkdir -p pages-repo/cuttable3d
+          cp -r dist/. pages-repo/cuttable3d/
+
+      - name: Push to pages repo
+        run: |
+          cd pages-repo
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add cuttable3d/
+          git diff --cached --quiet || git commit -m "deploy: update cuttable3d"
+          git push
