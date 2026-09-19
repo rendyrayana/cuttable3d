@@ -17570,7 +17570,7 @@ void main() {
   function WK(C) {
     const A = new mh();
     return new Promise((I, g) => {
-      A.load("./sample-model.stl", (B) => {
+      A.load("/Cuttable3D/sample-model.stl", (B) => {
         B.computeBoundingBox();
         const Q = B.boundingBox, E = new p();
         Q.getSize(E);
