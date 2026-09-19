@@ -1,45 +1,92 @@
 # Cuttable3D
 
-A browser-based tool for slicing 3D models into printable parts. Draw a line to cut, inspect pieces with real physics, then verify fit with an interactive puzzle mode.
+> Browser-based 3D model slicing tool for print preparation — prototype / research.
 
-## Features
+![Banner](docs/banner.png)
 
-**Cutting**
-- Freehand straight-line cuts with automatic plane detection
-- Optional snap-fit peg joints at cut faces
-- Unlimited undo / redo (Ctrl+Z / Ctrl+Y)
+**[Live Preview](#)** · **[Project Page](#)** · [Rendy Rayana](#)
 
-**Physics**
-- Rigid-body simulation — pieces fall, bounce, and can be picked up and thrown
-- Orbit (right-drag) and zoom (scroll)
+---
 
-**Puzzle Mode**
-- Ghost outlines mark where each piece belongs
-- Drag pieces to snap them back into place
-- Scroll to rotate on Y, Cmd+Scroll to rotate on X while dragging
+## Overview
 
-**Extras**
-- Isolation mode with transform gizmo for precise repositioning
+Cuttable3D is a browser-based tool for slicing STL models into separate parts in preparation for 3D printing. It lets you draw a cut line directly on the model, inspect the resulting pieces with real rigid-body physics, add snap-fit peg joints at cut faces, and verify that all parts reassemble correctly using an interactive puzzle mode. Built as a prototype to explore geometry processing and physics-based interaction in the browser.
 
-## Tech Stack
+---
+
+## Screenshots
 
 | | |
 |---|---|
-| [Three.js](https://threejs.org) v0.179 | Rendering and post-processing |
-| [Rapier](https://rapier.rs) 3D | WASM rigid-body physics |
-| [three-bvh-csg](https://github.com/gkjohnson/three-bvh-csg) | Mesh boolean operations |
-| [manifold-3d](https://github.com/elalish/manifold) | Manifold cap geometry |
-| [Vite](https://vitejs.dev) | Build tooling |
+| ![](docs/screenshot-1.png) | ![](docs/screenshot-2.png) |
+| *Freehand cut gesture* | *Puzzle reassembly mode* |
+
+---
+
+## Features
+
+- Freehand straight-line cuts with automatic plane detection
+- Snap-fit peg joints generated at cut faces
+- Real rigid-body physics — pieces fall, bounce, and can be picked up and thrown
+- Puzzle mode — ghost outlines mark each piece's original position; drag to snap back
+- Scroll to rotate pieces while dragging in puzzle mode (Y axis; Cmd+Scroll for X)
+- Isolation mode with transform gizmo for precise repositioning
+- Unlimited undo / redo
+
+---
+
+## What Makes This Different
+
+Most browser-based 3D tools treat geometry statically. Cuttable3D combines CSG boolean operations with a live physics simulation, so cut results are immediately interactive rather than just visual. The puzzle mode provides a lightweight way to verify that a multi-part split will reassemble correctly before sending to a printer — without leaving the browser.
+
+---
+
+## Requirements
+
+- Node.js 18+
+- Modern browser with WebAssembly support (Chrome, Firefox, Safari)
+
+---
 
 ## Getting Started
 
 ```bash
+git clone https://github.com/rendyrayana/Cuttable3D
+cd Cuttable3D
 npm install
 npm run dev
 ```
 
 Open `http://localhost:5173`. A sample model loads automatically.
 
+---
+
+## Tech Stack
+
+| Library / Tool | Role |
+|---|---|
+| [Three.js](https://threejs.org) v0.179 | 3D rendering and post-processing |
+| [Rapier](https://rapier.rs) 3D | WASM rigid-body physics simulation |
+| [three-bvh-csg](https://github.com/gkjohnson/three-bvh-csg) | Mesh boolean operations for cuts |
+| [manifold-3d](https://github.com/elalish/manifold) | Manifold geometry for cut cap faces |
+| [Vite](https://vitejs.dev) | Dev server and build tooling |
+
+---
+
+## Status
+
+`Prototype` — built as part of ongoing exploration into browser-based geometry tools. Not production-ready. Feedback and issues welcome.
+
+---
+
 ## License
 
-MIT
+[MIT](LICENSE)
+
+---
+
+## Links
+
+- **Live Preview:** [link](#)
+- **Project write-up:** [link](#)
+- **More projects:** [yourwebsite.com](#)
