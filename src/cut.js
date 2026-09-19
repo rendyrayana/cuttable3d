@@ -22,7 +22,7 @@ let wasm = null;
 
 export async function initCutter() {
   wasm = await ManifoldModule({
-    locateFile: (path) => path.endsWith('.wasm') ? '/manifold.wasm' : path,
+    locateFile: (path) => path.endsWith('.wasm') ? import.meta.env.BASE_URL + 'manifold.wasm' : path,
   });
   wasm.setup();
 }

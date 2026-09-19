@@ -8,4 +8,12 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['manifold-3d', '@dimforge/rapier3d-compat'],
   },
+  build: {
+    target: 'esnext',
+  },
+  server: {
+    fs: {
+      strict: false,
+    },
+  },
 });
