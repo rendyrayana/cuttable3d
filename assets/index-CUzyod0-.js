@@ -17550,7 +17550,7 @@ void main() {
     function WK(C) {
         const A = new mh;
         return new Promise((I, g)=>{
-            A.load("/Cuttable3D/sample-model.stl", (B)=>{
+            A.load("/cuttable3d/sample-model.stl", (B)=>{
                 B.computeBoundingBox();
                 const Q = B.boundingBox, E = new p;
                 Q.getSize(E);
@@ -17627,7 +17627,7 @@ void main() {
         return h.setIndex(t), h;
     }
     const _K = "modulepreload", jK = function(C) {
-        return "/Cuttable3D/" + C;
+        return "/cuttable3d/" + C;
     }, sS = {}, vK = function(A, I, g) {
         let B = Promise.resolve();
         if (I && I.length > 0) {
@@ -18273,7 +18273,7 @@ void main() {
         }
         var NA;
         function xA() {
-            return I.locateFile ? t("manifold.wasm") : new URL("/Cuttable3D/assets/manifold-BE4c7gO-.wasm", import.meta.url).href;
+            return I.locateFile ? t("manifold.wasm") : new URL("/cuttable3d/assets/manifold-BE4c7gO-.wasm", import.meta.url).href;
         }
         function oI(n) {
             if (n == NA && c) return new Uint8Array(c);
@@ -19585,7 +19585,7 @@ ${_A}
     let EB = null;
     async function VK() {
         EB = await XK({
-            locateFile: (C)=>C.endsWith(".wasm") ? "/Cuttable3D/manifold.wasm" : C
+            locateFile: (C)=>C.endsWith(".wasm") ? "/cuttable3d/manifold.wasm" : C
         }), EB.setup();
     }
     function zK(C, A, I, g, B) {
