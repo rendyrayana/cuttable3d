@@ -17647,7 +17647,7 @@ void main() {
     return h.setIndex(t), h;
   }
   const _K = "modulepreload", jK = function(C) {
-    return "/cuttable3d/" + C;
+    return "/Cuttable3D/" + C;
   }, sS = {}, vK = function(A, I, g) {
     let B = Promise.resolve();
     if (I && I.length > 0) {
@@ -18296,7 +18296,7 @@ void main() {
     }
     var NA;
     function xA() {
-      return I.locateFile ? t("manifold.wasm") : new URL("/cuttable3d/assets/manifold-BE4c7gO-.wasm", import.meta.url).href;
+      return I.locateFile ? t("manifold.wasm") : new URL("/Cuttable3D/assets/manifold-BE4c7gO-.wasm", import.meta.url).href;
     }
     function oI(n) {
       if (n == NA && c) return new Uint8Array(c);
