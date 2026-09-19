@@ -4,7 +4,7 @@
 
 ![Banner](docs/banner.png)
 
-**[Live Preview](https://rendyrayana.github.io/Cuttable3D)** · **[Project Page](#)** · [Rendy Rayana](https://rendyrayana.my.id)
+**[Live Preview](https://rendyrayana.github.io/cuttable3d)** · **[Project Page](#)** · [Rendy Rayana](https://rendyrayana.my.id)
 
 ## Overview
 
@@ -67,6 +67,6 @@ Open `http://localhost:5173`. A sample model loads automatically.
 
 ## Links
 
-- **Live Preview:** [rendyrayana.github.io/Cuttable3D](https://rendyrayana.github.io/Cuttable3D)
+- **Live Preview:** [rendyrayana.github.io/cuttable3d](https://rendyrayana.github.io/cuttable3d)
 - **Project write-up:** [link](#)
 - **More projects:** [rendyrayana.my.id](https://rendyrayana.my.id)

@@ -3,7 +3,7 @@ import wasm from 'vite-plugin-wasm';
 import topLevelAwait from 'vite-plugin-top-level-await';
 
 export default defineConfig({
-  base: '/Cuttable3D/',
+  base: '/cuttable3d/',
   plugins: [wasm(), topLevelAwait()],
   optimizeDeps: {
     exclude: ['manifold-3d', '@dimforge/rapier3d-compat'],
