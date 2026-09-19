@@ -1,24 +1,35 @@
 # Cuttable3D
 
-Browser-based 3D model cutting tool. Slice STL files with freehand gestures, inspect pieces with real physics, and verify they reassemble correctly with puzzle mode.
+A browser-based tool for slicing 3D models into printable parts. Draw a line to cut, inspect pieces with real physics, then verify fit with an interactive puzzle mode.
 
 ## Features
 
-- Freehand slice with straight-line gestures
-- Joint pegs at cut faces for snap-fit assembly
-- Real rigid-body physics (pick up, throw, scatter)
-- Puzzle mode: drag pieces onto ghost outlines to snap them back
-- Scroll while dragging in puzzle mode to rotate pieces
-- Undo / Redo (Ctrl+Z / Ctrl+Y)
-- Isolation mode with transform gizmo
+**Cutting**
+- Freehand straight-line cuts with automatic plane detection
+- Optional snap-fit peg joints at cut faces
+- Unlimited undo / redo (Ctrl+Z / Ctrl+Y)
 
-## Stack
+**Physics**
+- Rigid-body simulation — pieces fall, bounce, and can be picked up and thrown
+- Orbit (right-drag) and zoom (scroll)
 
-- [Three.js](https://threejs.org) v0.179
-- [Rapier](https://rapier.rs) 3D physics (WASM)
-- [three-bvh-csg](https://github.com/gkjohnson/three-bvh-csg)
-- [manifold-3d](https://github.com/elalish/manifold)
-- [Vite](https://vitejs.dev)
+**Puzzle Mode**
+- Ghost outlines mark where each piece belongs
+- Drag pieces to snap them back into place
+- Scroll to rotate on Y, Cmd+Scroll to rotate on X while dragging
+
+**Extras**
+- Isolation mode with transform gizmo for precise repositioning
+
+## Tech Stack
+
+| | |
+|---|---|
+| [Three.js](https://threejs.org) v0.179 | Rendering and post-processing |
+| [Rapier](https://rapier.rs) 3D | WASM rigid-body physics |
+| [three-bvh-csg](https://github.com/gkjohnson/three-bvh-csg) | Mesh boolean operations |
+| [manifold-3d](https://github.com/elalish/manifold) | Manifold cap geometry |
+| [Vite](https://vitejs.dev) | Build tooling |
 
 ## Getting Started
 
@@ -27,7 +38,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173`.
+Open `http://localhost:5173`. A sample model loads automatically.
 
 ## License
 
