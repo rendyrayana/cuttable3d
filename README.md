@@ -2,7 +2,7 @@
 
 > Browser-based 3D model slicing tool for print preparation. Prototype / research.
 
-![Banner](docs/banner.png)
+<video src="docs/banner.mp4" autoplay loop muted playsinline width="100%"></video>
 
 **[Live Preview](https://rendyrayana.github.io/cuttable3d)** · **[Project Page](#)** · [Rendy Rayana](https://rendyrayana.my.id)
 
@@ -12,10 +12,7 @@ Cuttable3D is a browser-based tool for slicing STL models into separate parts in
 
 ## Screenshots
 
-| | |
-|---|---|
-| ![](docs/screenshot-1.png) | ![](docs/screenshot-2.png) |
-| *Freehand cut gesture* | *Puzzle reassembly mode* |
+![](docs/screenshot-1.jpg)
 
 ## Features
 
