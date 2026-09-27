@@ -2,7 +2,9 @@
 
 > Browser-based 3D model slicing tool for print preparation. Prototype / research.
 
-<video src="docs/banner.mp4" autoplay loop muted playsinline width="100%"></video>
+
+https://github.com/user-attachments/assets/365be641-525c-45e8-b0bc-0a8185407475
+
 
 **[Live Preview](https://rendyrayana.github.io/cuttable3d)** · **[Project Page](#)** · [Rendy Rayana](https://rendyrayana.my.id)
 
